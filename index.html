@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <!--To sepearte lines use a div. Otherwise, label would 
+            be beside input-->
+        <div>
+            <!--The for in Label needs to be the same as id in 
+                Input for the browser to match them up -->
+            <label for="first_name">First Name: *</label>
+            <input type="text" name="first_name" id="first_name">
+        </div>
+        <div>
+            <label for="last_name">First Name: *</label>
+            <input type="text" name="last_name" id="last_name">
+        </div>
+        <div>
+            <label for="email">Email Address: *</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password: *</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <p>Gender Identity:</p>
+            <!--You can only have 1 type of id per page. They 
+                must be unique. Think of it like your Driver ID. 
+                There is only one person with that number. 
+                For Radio buttons, the "names" can match-->
+            <input type="radio" name="gender_identity" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender_identity" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="language">Favorite Language</label>
+            <select name="language" id="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="ruby">Ruby</option>
+            </select>
+        </div>
+        <input type="submit" value="Register"> 
+    </form>
+</body>
+</html>
